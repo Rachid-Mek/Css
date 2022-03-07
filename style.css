@@ -49,16 +49,16 @@ input[type="text"] {
 }
 
 /* Give both <p>'s inside the 3rd <div> a pink background*/
-div:nth-child(3) p {
+div:nth-of-type(3) p {
   background-color: #f731b9;
 }
 /* Give the 2nd <p> inside the 3rd <div> a 5px white border*/
-div:nth-child(3) p:nth-child(2) {
+div:nth-of-type(3) > p:nth-of-type(2) {
   border: 5px solid #ffffff;
 }
 
 /* Make the <em> in the 3rd <div> element white and 20px font(font-size:20px)*/
-div:nth-child(3) em {
+div:nth-of-type(3) em {
   color: #ffffff;
   font-size: 20px;
 }
@@ -88,3 +88,4 @@ h1:hover {
 a:visited {
   color: gray;
 }
+
